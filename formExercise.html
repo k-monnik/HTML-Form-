@@ -7,7 +7,7 @@
 <h1>Register</h1>
 
 <form>
-	<p>
+	<div>
 	<label>
 		First Name:
 		<input type="text" placeholder="First Name" required> 
@@ -17,8 +17,8 @@
 		Last Name:
 		<input type="text" placeholder="Last Name" required>
 	</label>
-	</p>
-	<p>
+	</div>
+	<div>
 	<label for="Male">Male: </label>
 	<input name="genderChoice" id="Male" type="radio" value="Male">
 
@@ -27,19 +27,17 @@
 
 	<label for="Other"> Other:</label>
 	<input name="genderChoice" id="Other" type="radio" value="Other">
-	</p>
-	<p>
+	</div>
+	<div>
 	<label>
 	 	Email Address: 
 	 	<input type="email" placeholder="your email">
 	 </label>
-
-<label>
-		Password:
-		<input type="password" placeholder="your password" minlength="5" maxlength="10" required>
-	</label>
-	</p>
-	<p>
+	 
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" pattern="{5,10}" placeholder="your password" required title="5 to 10 characters">
+	</div>
+	<div>
 	<label>
 		Birthday:
 		<select name="Month">
@@ -63,12 +61,13 @@
 			<option>1992</option>
 		</select>
 	</label>
-	</p>
-	<p>I agree to the terms and conditions.
+	</div>
+	<div>I agree to the terms and conditions.
 	<input type="checkbox">
-	</p>
+	</div>
+	<div>
 	<button>Submit</button>
-	
+	</div>
 </form>
 
 
